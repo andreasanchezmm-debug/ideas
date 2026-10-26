@@ -2,3 +2,5 @@ node_modules
 .next
 .next-debug
 package-lock.json
+
+demo-dist

@@ -1,0 +1,59 @@
+.demo-banner {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: #f6e3b7;
+  border-bottom: 2px solid #b07a1e;
+  color: #533b13;
+  padding: 14px 5.5%;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+.demo-banner strong {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.demo-banner span {
+  font-size: 12px;
+  display: block;
+}
+.demo-detail {
+  background: #f0f3e9;
+  padding: 35px;
+  border-radius: 10px;
+}
+.demo-detail > .field {
+  max-width: 600px;
+}
+section[id] {
+  scroll-margin-top: 100px;
+}
+#ficha {
+  scroll-margin-top: 110px;
+}
+.demo-detail .value-panel h2 {
+  font-size: 34px;
+}
+#descargas [role="status"] {
+  margin-top: 15px;
+}
+@media (max-width: 760px) {
+  .demo-banner {
+    padding: 10px 6%;
+    gap: 10px;
+  }
+  .demo-banner strong {
+    font-size: 10px;
+  }
+  .demo-banner span {
+    font-size: 10px;
+  }
+  .demo-detail {
+    padding: 20px;
+  }
+  .demo-detail > .field {
+    max-width: 100%;
+  }
+}

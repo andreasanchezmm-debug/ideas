@@ -73,3 +73,9 @@ Las pruebas de dominio usan una base temporal aislada, datos ficticios marcados 
 API pública: `/api/data`, `?type=catalog`, `?type=territories`, `?type=reports`, `?type=report&id=...` (informe público en texto), `?format=csv|xlsx`. Filtros: `city`, `indicator`, `period`, `territory` (o `municipal`). API administrativa autenticada en `/api/admin`. Las descargas filtran publicación y permiso de reutilización.
 
 Consulta [arquitectura, modelo de datos, diseño y fases](docs/ARQUITECTURA.md) y [evidencias y límites](docs/VALIDACION.md).
+
+## Demo interactiva sin servidor de base de datos
+
+Se ha añadido una demo estática separada con 40 definiciones y ocho series **ficticias**, identificadas en toda la interfaz. No altera los datos del observatorio ni afirma que existan cifras verificadas de Alicante. Permite probar filtros, fichas, gráficos y descargas sin acceder al panel administrativo.
+
+Consulta [contenido, pruebas y activación de GitHub Pages](docs/DEMO.md). Comandos: `npm run demo:build`, `npm run demo:test` y `npm run demo:publish`. La presencia de una rama `gh-pages` no prueba que el alojamiento esté activado.
